@@ -1,14 +1,19 @@
+# НЕ ИСПОЛЬЗУЕТСЯ
+# НЕ ИСПОЛЬЗУЕТСЯ
+# НЕ ИСПОЛЬЗУЕТСЯ
+# НЕ ИСПОЛЬЗУЕТСЯ
+# НЕ ИСПОЛЬЗУЕТСЯ
 import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from openai import OpenAI
 from dotenv import load_dotenv
-
+# НЕ ИСПОЛЬЗУЕТСЯ
 load_dotenv()
-
+# НЕ ИСПОЛЬЗУЕТСЯ
 app = FastAPI()
-
+# НЕ ИСПОЛЬЗУЕТСЯ
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Разрешаем запросы с любых портов (включая 5173)
@@ -16,12 +21,12 @@ app.add_middleware(
     allow_methods=["*"],  # Разрешаем любые типы запросов (POST, GET и т.д.)
     allow_headers=["*"],
 )
-
+# НЕ ИСПОЛЬЗУЕТСЯ
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("key")
 )
-
+# НЕ ИСПОЛЬЗУЕТСЯ
 # какие данные к нам прилетят от Vue
 class TranslateRequest(BaseModel):
     text: str

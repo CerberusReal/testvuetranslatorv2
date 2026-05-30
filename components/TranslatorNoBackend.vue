@@ -67,12 +67,12 @@
 import { ref, computed, onMounted } from 'vue'
 import axios from 'axios'
 
-const inputText = ref('')
-const sourceLang = ref('')
-const outputLang = ref('')
-const translation = ref('')
+const inputText = ref('') // текст
+const sourceLang = ref('') // исходный язык
+const outputLang = ref('') // на какой язык перевести
+const translation = ref('') // перевод
 const loading = ref(false)
-const error = ref('')
+const error = ref('') // текст ошибки
 
 // Переменная под ключ
 const apiKey = ref('')
