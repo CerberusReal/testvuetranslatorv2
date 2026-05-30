@@ -59,6 +59,7 @@
     </div>
 
     <p v-if="error" class="alert alert-danger m-0 mt-3">{{ error }}</p>
+    <footer class="text-muted">© FireDestik (and a lil' bit of AI), 2026</footer>
   </div>
 </template>
 
