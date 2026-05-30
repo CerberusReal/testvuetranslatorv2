@@ -71,7 +71,7 @@ const inputText = ref('') // текст
 const sourceLang = ref('') // исходный язык
 const outputLang = ref('') // на какой язык перевести
 const translation = ref('') // перевод
-const loading = ref(false)
+const loading = ref(false) // крутится ли спиннер (загрузка)
 const error = ref('') // текст ошибки
 
 // Переменная под ключ
